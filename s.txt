@@ -1,0 +1,31 @@
+string in immutable mean -> onec string created cannot change(delete and add) in it to change create new string
+and new string creating take time consuming for that we have string builder 
+string builder do add delete modify and don't take that much time even
+string in jave are immutable , once string created into memory cannot change in it
+anything creation in heap memory take little time(millisecond , microsecode)
+photo 
+string and string builder are much similar 
+
+declare string builder
+StringBuilder vnsb =  new StringBuilder("tony");
+System.out.println(vnsb);
+
+//char at index 0
+System.out.println(vnsb.charAt(0));
+
+//set char at index 0
+vnsb.setCharAt(0,'p');
+System.out.println(vnsb);
+
+StringBuilder r = new StringBuilder("h");
+    r.append("e");
+    r.append("ll");
+    r.append("o");
+    System.out.println(r);
+ System.out.println(r.length());
+    //ek ek append karne par memory me change nhi hoga 
+
+    same with string 
+    str = str + "e";
+    str = str + "o";
+    //string me new new string banti hai 

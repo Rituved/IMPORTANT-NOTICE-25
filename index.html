@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper {
+      width: 240px;
+      height: 320px;
+    }
+
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+      border: 5px double rgb(2, 2, 2);
+    }
+
+    .swiper-slide:nth-child(1n) {
+      background-color: rgb(206, 17, 17);
+    }
+
+    .swiper-slide:nth-child(2n) {
+      background-color: rgb(0, 140, 255);
+    }
+
+    .swiper-slide:nth-child(3n) {
+      background-color: rgb(10, 184, 111);
+    }
+
+    .swiper-slide:nth-child(4n) {
+      background-color: rgb(211, 122, 7);
+    }
+
+    @keyframes example {
+      to {
+        transform: scale(1s);
+
+      }
+
+      from {
+        transform: scale(0);
+      }
+    }
+
+    /* The element to apply the animation to */
+    p {
+      font-size: 7vw;
+      position: absolute;
+      top: -3vh;
+      left: 0vh;
+      animation-name: example;
+      animation-duration: 4s;
+    }
+
+    .p {
+      font-size: 7vw;
+      position: absolute;
+      top: -3vh;
+      right: 0px;
+      animation-name: example;
+      animation-duration: 4s;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+
+  <div class="f" style="box-shadow: 10px 10px  rgb(255, 0, 21);">
+    <div class="swiper mySwiper" style=" border: 2px solid red; padding: 15vh; box-shadow: -10px -10px blue;">
+      <p>😎</p>
+      <p class="p">😆</p>
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide" style="object-fit: cover;"><img
+            src="https://cdn.pixabay.com/photo/2025/01/22/19/57/ai-generated-9353016_960_720.png" alt=""></div>
+        <div class="swiper-slide"><video src="2.mp4" controls type="video/ogg"></video></div>
+        <div class="swiper-slide"><img src="f.jpg" alt=""></div>
+        <div class="swiper-slide"><video src="1.mp4" type="video"></video></div>
+
+      </div>
+      <marquee behavior="" direction=""
+        style="padding-top: 30px; text-align: center; font-size: 5vh; font-weight: 600; text-shadow:5px 0px rgb(51, 255, 0);">
+        April
+        fool 🙄</marquee>
+
+    </div>
+  </div>
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cards",
+      grabCursor: true,
+    });
+  </script>
+</body>
+
+</html>
